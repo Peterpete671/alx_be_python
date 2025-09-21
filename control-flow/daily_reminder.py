@@ -19,12 +19,11 @@ while True:
 
     # Use if statement to modify reminder if time-bound
     if time_bound == "yes":
-        reminder += " that requires immediate attention today!"
+        print(f"Reminder: {reminder} that requires immediate attention today!")
     elif time_bound == "no":
-        reminder += ". Consider completing it when you have free time."
+        print(f"Note: {Reminder}. Consider completing it when you have free time.")
     else:
         print("Invalid input for time sensitivity. Please enter yes or no.\n")
         continue  # Restart loop for correct input
 
-    print(f"\nReminder: {reminder}\n")
     break  # Exit loop once valid input is processed
